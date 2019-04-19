@@ -69,5 +69,17 @@ public class MainActivity extends AppCompatActivity {
         arraycountries.add(edittxt.getText().toString());
       }
     });
+     remove.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        arraycountries.remove(edittxt.getText().toString());
+          }
+          });
+    edit.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        arraycountries.edit(edittxt.getText().toString());
+        }
+      });
   }
 }
